@@ -222,10 +222,10 @@ input.el-input__inner {
         <el-form-item align="center" placeholder="请选择" :popper-append-to-body="false">
 
             <el-button round plain :type="button90" @click="handle90">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">季度</span>
+                <span style="color: #ffffff; font-size: 1 rem;font-weight:bold">季度</span>
             </el-button>
             <el-button round plain :type="button37" @click="handle37">
-                <span style="color: #ffffff; font-size: 18px;font-weight:bold">月度</span>
+                <span style="color: #ffffff; font-size: 1 rem;font-weight:bold">月度</span>
             </el-button>
 
         </el-form-item>
@@ -235,7 +235,7 @@ input.el-input__inner {
     <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
         style="z-index:4;position:absolute;left:700px;top:980px;">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-            <span style="float: left;font-size: 13px">{{item.label}}</span>
+            <span style="float: left;font-size: 1 rem">{{item.label}}</span>
         </el-option>
     </el-select>
 
@@ -253,13 +253,13 @@ input.el-input__inner {
         <el-form-item align="center" :popper-append-to-body="false">
 
             <el-button round plain :type="vppv" @click="vppv_function">
-                <span style="color: #ffffff;">VPPV</span>
+                <span style="color: #ffffff;font-size: 1 rem">VPPV</span>
             </el-button>
             <el-button round plain :type="shangji" @click="shangji_function">
-                <span style="color: #ffffff;">商机</span>
+                <span style="color: #ffffff;font-size: 1 rem">商机</span>
             </el-button>
             <el-button round plain :type="liuliang" @click="liuliang_function">
-                <span style="color: #ffffff;">配流</span>
+                <span style="color: #ffffff;font-size: 1 rem">配流</span>
             </el-button>
         </el-form-item>
     </el-form>
