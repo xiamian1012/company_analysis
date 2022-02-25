@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width">
-<meta name="description" content="Company data-analysis">    
-<title>company_analysis</title>  
 <style>
 html,
 body {
@@ -175,7 +170,7 @@ li.el-select-dropdown__item:hover {
 
 li.el-select-dropdown__item {
     border-radius: 5px;
-    font-size: 1 rem;
+    font-size: 14px;
     padding: 0 20px;
     position: relative;
     white-space: nowrap;
@@ -202,6 +197,7 @@ input.el-input__inner {
 }
 
 </style>
+
 <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/index.min.js"></script>
@@ -223,20 +219,19 @@ input.el-input__inner {
         <el-form-item align="center" placeholder="请选择" :popper-append-to-body="false">
 
             <el-button round plain :type="button90" @click="handle90">
-                <span style="color: #ffffff; font-size: 1 rem;font-weight:bold">季度</span>
+                <span style="color: #ffffff; font-size: 18px;font-weight:bold">季度</span>
             </el-button>
             <el-button round plain :type="button37" @click="handle37">
-                <span style="color: #ffffff; font-size: 1 rem;font-weight:bold">月度</span>
+                <span style="color: #ffffff; font-size: 18px;font-weight:bold">月度</span>
             </el-button>
 
         </el-form-item>
     </el-form>
 
-
     <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
         style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-            <span style="float: left;font-size: 1 rem">{{item.label}}</span>
+            <span style="float: left;font-size: 13px">{{item.label}}</span>
         </el-option>
     </el-select>
 
@@ -254,13 +249,13 @@ input.el-input__inner {
         <el-form-item align="center" :popper-append-to-body="false">
 
             <el-button round plain :type="vppv" @click="vppv_function">
-                <span style="color: #ffffff;font-size: 1 rem">VPPV</span>
+                <span style="color: #ffffff; font-size: 12px;">VPPV</span>
             </el-button>
             <el-button round plain :type="shangji" @click="shangji_function">
-                <span style="color: #ffffff;font-size: 1 rem">商机</span>
+                <span style="color: #ffffff; font-size: 12px;">商机</span>
             </el-button>
             <el-button round plain :type="liuliang" @click="liuliang_function">
-                <span style="color: #ffffff;font-size: 1 rem">配流</span>
+                <span style="color: #ffffff; font-size: 12px;">配流</span>
             </el-button>
         </el-form-item>
     </el-form>
