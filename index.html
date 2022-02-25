@@ -123,7 +123,8 @@ body {
 #el-form1 {
     position: absolute;
     z-index: 4;
-    width: 100%;
+    width: 500px;
+    left:707x;
     top: 500px;
 }
 
@@ -174,7 +175,7 @@ li.el-select-dropdown__item:hover {
 
 li.el-select-dropdown__item {
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1 rem;
     padding: 0 20px;
     position: relative;
     white-space: nowrap;
@@ -233,7 +234,7 @@ input.el-input__inner {
 
 
     <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
-        style="z-index:4;position:absolute;left:700px;top:980px;">
+        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
             <span style="float: left;font-size: 1 rem">{{item.label}}</span>
         </el-option>
