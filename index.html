@@ -232,7 +232,7 @@ input.el-input__inner {
     </el-form>
 
     <el-select clearable v-model="value" placeholder="请选择指标" @change="change" @clear="clear"
-        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;">
+        style="z-index:4;position:absolute;left:700px;width:250px;top:980px;" :popper-append-to-body="false">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
             <span style="float: left;font-size: 13px">{{item.label}}</span>
         </el-option>
